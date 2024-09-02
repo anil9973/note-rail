@@ -31,16 +31,26 @@ body {
 	font-size: 100%;
 	height: 100%;
 	margin: 0;
-	padding: 1.2em;
 	text-rendering: optimizeSpeed;
 	color: light-dark(black, hsl(0, 0%, 90%));
 	background-color: light-dark(hsl(0, 0%, 92%), hsl(0, 0%, 6%));
+}
+
+.top-bar {
+	box-shadow: var(--card);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.4em;
+	background-color: light-dark(white, hsl(0, 0%, 12%));
+	margin-bottom: 4px;
 }
 
 main {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 1.5em;
+	padding-inline: 1.2em;
 }
 
 figure {
